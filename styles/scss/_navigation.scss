@@ -166,7 +166,7 @@ nav {
 
 	.row-1 {
 		display: flex;
-		justify-content: right;
+		justify-content: flex-end;
 		align-items: center;
 	}
 
@@ -178,7 +178,7 @@ nav {
 
 	.row-2 {
 		display: flex;
-		justify-content: right;
+		justify-content: flex-end;
 		align-items: center;
 		margin-top: 1rem;
 		margin-right: 1rem;
