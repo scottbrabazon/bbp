@@ -1,0 +1,198 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.8rem 0;
+	height: 3rem;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background: $primary-color;
+}
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	top: 1.3rem;
+	left: 2rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	display: block;
+}
+
+#nav-button {
+	padding: 0;
+	border: none;
+	background: url("../img/burger-menu-open.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	top: 1.3rem;
+	right: 2rem;
+	z-index: 3;
+	display: block;
+}
+
+#nav-button.open {
+	background-image: url("../img/burger-menu-close.svg");
+}
+
+#nav {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: -1000px;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.nav-container {
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.nav-container svg {
+	color: $text-color-light;
+}
+
+.nav-container a {
+	display: block;
+	color: $text-color-light;
+	text-decoration: none;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem 0 1rem;
+	color: $text-color-dark;
+}
+
+.social a {
+	padding: 0.5em;
+}
+
+.row-1 a {
+	margin-bottom: 0.5rem;
+}
+
+.row-1 span {
+	font-size: 1px;
+	opacity: 0;
+}
+
+.row-2 a {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	@include fontSize(19px);
+}
+
+.row-2 .button {
+	color: $text-color-light;
+	margin-top: 2rem;
+	display: inline-block;
+	border-color: $text-color-light
+}
+
+
+@media only screen and (min-width: 700px) {
+
+	nav {
+		position: relative;
+		height: unset;
+		width: 100%;
+		padding-top: 0.7rem;
+		background-color: white;
+	}
+
+	.logo {
+		top: 4rem;
+	}
+
+	#nav-button {
+		display: none;
+	}
+
+	#nav {
+		position: relative;
+		left: 0 !important;
+		height: unset;
+		background: none;
+		text-align: right;
+	}
+
+	.nav-container {
+		position: relative;
+		transform: none;
+		right: 0;
+		top: 0;
+		left: 0;
+		width: unset;
+		padding-right: 1.7rem;
+	}
+
+	.nav-container svg {
+		color: $primary-color;
+	}
+
+	.nav-container a {
+		display: block;
+		color: $text-color-dark;
+		text-decoration: none;
+	}
+
+	.social {
+		margin: 0;
+		align-items: center;
+		@include fontSize(13px);
+	}
+
+	.social a {
+		margin: 0;
+	}
+
+	.social svg {
+		color: $text-color-dark;
+		width: 1rem;
+	}
+
+	.row-1 {
+		display: flex;
+		justify-content: right;
+		align-items: center;
+	}
+
+	.row-1 > a {
+		margin-right: 1rem;
+		@include fontSize(13px);
+		margin-bottom: 0;
+	}
+
+	.row-2 {
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		margin-top: 1rem;
+		margin-right: 1rem;
+	}
+
+	.row-2 a {
+		@include fontSize(13px);
+		margin-right: 2rem;
+	}
+
+	.row-2 .button {
+		margin-top: 0;
+		border-color: $primary-color;
+		color: $primary-color;
+		margin-right: 0.5rem;
+	}
+}

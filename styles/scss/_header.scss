@@ -1,0 +1,150 @@
+header {
+	min-height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+header video {
+	object-fit: cover;
+	margin-left: 0;
+	height: 100vh;
+	display: block;
+}
+
+header hr {
+	height: 2px;
+	width: 8rem;
+	display: block;
+	margin: 0 auto 0 0;
+	border: none;
+	background: $text-color-light;
+	margin-bottom: 1.3rem;
+}
+
+header p {
+	color: $text-color-light;
+	margin-bottom: 1.3rem;
+	max-width: 375px;
+}
+
+header .button {
+	color: $text-color-light;
+	border-color: $text-color-light;
+}
+
+header .header-container {
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+header .text-container {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#header-text-container {
+	padding-top: 5rem;
+}
+
+// header .text-container > div {
+// 	padding: 0 2rem;
+// }
+
+header form {
+	background: $text-color-light;
+	padding: 0.5rem ;
+	@include fontSize(21px);
+	display: flex;
+	flex-direction: column;
+	color: $text-color-dark;
+	margin-bottom: 1.5rem;
+}
+
+header form > div {
+	border: solid 1px $secondary-color;
+	flex-grow: 2;
+	align-items: center;
+	display: flex;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+header input[type='text'] {
+	flex-grow: 2;
+	border: 0;
+	@include fontSize(16px);
+	margin-left: 1rem;
+	overflow: hidden;
+}
+
+header input[type='text']:focus-visible {
+	outline: none;
+}
+
+header input[type='submit'] {
+	background: $primary-color;
+	border: none;
+	color: $text-color-light;
+	padding: 1rem 2.2rem;
+	@include fontSize(16px);
+	margin-left: 0.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+@media only screen and (min-width: 500px) {
+
+	header form {
+		flex-direction: row;
+	}
+
+	header form > div {
+		margin-bottom: 0;
+	}
+}
+
+
+@media only screen and (min-width: 700px) {
+
+	#header-text-container {
+		padding-top: 0rem;
+	}
+
+	header {
+		height: 756px;
+		min-height: unset;
+	}
+
+	header video {
+		width: 100%;
+		height: unset;
+		min-height: 756px;
+	}
+
+	header .inner-container {
+		max-width: 34em;
+		padding-right: 0;
+	}
+}
+
+// @media only screen and (min-width: 1200px) {
+
+// 	header {
+// 		max-height: 600px;
+// 		height: auto;
+// 	}
+
+// }
+
+
+
+
+
+

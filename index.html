@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biff Bang Pow Front end Test</title>
+  <meta name="description" content="Biff Bang Pow Front end Test by Scott Brabazon">
+  <meta name="author" content="SitePoint">
+  <meta property="og:title" content="Biff Bang Pow Front end Test">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:description" content="Biff Bang Pow Front end Test by Scott Brabazon">
+  <!-- <meta property="og:image" content="image.png"> -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <script defer src="fonts/fontawesome-free/js/all.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION START -->
+
+  <nav>
+
+    <div id="nav">
+      <div class="nav-container">
+
+        <div class="row-1">
+          <a onclick="closeOnSelection()" href="tel:01234 567 890"><i class="fas fa-phone"></i>&nbsp;&nbsp;01234 567 890</a>
+          <a onclick="closeOnSelection()" href="mailto:email@example.com"><i class="fas fa-envelope"></i>&nbsp;&nbsp;email@example.com</a>
+          <div class="social">
+            <a onclick="closeOnSelection()" href="#"><span>LinkedIn</span><i class="fab fa-linkedin-in"></i></a>
+            <a onclick="closeOnSelection()" href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+            <a onclick="closeOnSelection()" href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
+            <a onclick="closeOnSelection()" href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <a onclick="closeOnSelection()" href="#">About</a>
+          <a onclick="closeOnSelection()" href="#">Jobs</a>
+          <a onclick="closeOnSelection()" href="#">News</a>
+          <a onclick="closeOnSelection()" href="#">Contact Us</a>
+          <a onclick="closeOnSelection()" href="#" class="button"><i class="fas fa-upload"></i>&nbsp;&nbsp;Submit CV</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="logo">
+      <picture>
+        <!-- mobile logo -->
+        <source media="(max-width: 699px)" type="image/webp" srcset="img/logo-white.svg" width="32" height="32">
+        <!-- desktop logo -->
+        <img src="img/logo-black.svg" alt="Logo" width="32" height="32" />
+      </picture>
+    </a>
+
+    <button id="nav-button" aria-label="Burger menu" onclick="slideMenu()">
+    </button>
+
+  </nav>
+
+  <!-- NAVIGATION END -->
+
+  <!-- HEADER START -->
+
+  <header>
+    <video autoplay muted loop id="header-video">
+      <source src="img/placeholder.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+    </video>
+    <div class="header-container">
+      <div class="text-container" id="header-text-container">
+        <div class="inner-container">
+          <h1>Biff Bang Pow front end test.</h1>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam.</p>
+          <form>
+            <div>
+              <i class="fas fa-search"></i>
+              <input type="text" id="fname" name="fname" placeholder="Enter keyword or job title">
+            </div>
+            <input type="submit" value="Search">
+          </form>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER END -->
+
+  <!-- IMAGE BLOCK START -->
+
+  <section class="image-block">
+    <div class="inner-container">
+      <div class="col text">
+        <p class="subheader">Sub title goes in this spot</p>
+        <h2>Next Level Recruitment</h2>
+        <p>Curabitur dictumst quam scelerisque vulputate molestie habitant facilisi semper. Penatibus magnis dolor ullamcorper accumsan erat justo at parturient. Neque dictum aptent sem congue eget scelerisque nec. Hendrerit sociis curabitur nisl praesent. Tempus blandit bibendum quis ac senectus montes. Neque pellentesque, auctor pretium platea mus sem? Viverra cubilia pellentesque mollis phasellus dapibus vivamus.</p>
+        <a href="#" class="button">Our clients</a>
+      </div>
+      <div class="col">
+
+        <img src="img/text-image-image.webp" alt="XXXXX" width="446" height="504" />
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE BLOCK END -->
+
+  <!-- VIDEO BLOCK START -->
+
+  <section class="video-block">
+    <div class="video-block-outline"></div>
+    <div class="inner-container">
+      <div class="col text">
+        <p class="subheader">Sub title goes in this spot</p>
+        <h2>Next Level Recruitment</h2>
+        <p>Curabitur dictumst quam scelerisque vulputate molestie habitant facilisi semper. Penatibus magnis dolor ullamcorper accumsan erat justo at parturient. Neque dictum aptent sem congue eget scelerisque nec. Hendrerit sociis curabitur nisl praesent. Tempus blandit bibendum quis ac senectus montes. Neque pellentesque, auctor pretium platea mus sem? Viverra cubilia pellentesque mollis phasellus dapibus vivamus.</p>
+        <a href="#" class="button">Our clients</a>
+      </div>
+      <div class="col">
+        <div class="video">
+          <div class="embed-container">
+            <iframe title="vimeo-clip" src="https://player.vimeo.com/video/100902001?h=dcaa89d3e0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-title">
+            <hr />
+            <p>Video&nbsp;title</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO BLOCK END -->
+
+  <script src="js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>
