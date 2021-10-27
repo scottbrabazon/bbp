@@ -27,13 +27,18 @@
 	padding: 5rem 0;
 }
 
+.video-block .inner-container {
+	position: relative;
+	z-index: 1;
+}
+
 .video-block-outline {
 	border: 5px solid $secondary-color;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: 0
+	right: 0;
 }
 
 .embed-container {
